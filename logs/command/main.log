@@ -1,0 +1,28 @@
+10:56:03: [INFO] [C:\Users\Mark\Desktop\WARG\autonomy-bootcamp-2026-p2\modules\common\modules\logger\logger_main_setup.py | setup_main_logger | 62] main logger initialized
+10:56:06: [INFO] [C:\Users\Mark\Desktop\WARG\autonomy-bootcamp-2026-p2\tests\integration\test_command.py | main | 158] Connected!
+10:56:07: [INFO] [C:\Users\Mark\Desktop\WARG\autonomy-bootcamp-2026-p2\tests\integration\test_command.py | read_queue | 94] Worker output: CHANGE ALTITUDE: 1
+10:56:08: [INFO] [C:\Users\Mark\Desktop\WARG\autonomy-bootcamp-2026-p2\tests\integration\test_command.py | read_queue | 94] Worker output: CHANGE ALTITUDE: -1
+10:56:11: [INFO] [C:\Users\Mark\Desktop\WARG\autonomy-bootcamp-2026-p2\tests\integration\test_command.py | read_queue | 94] Worker output: CHANGE YAW: 63.43494882292201
+10:56:11: [INFO] [C:\Users\Mark\Desktop\WARG\autonomy-bootcamp-2026-p2\tests\integration\test_command.py | read_queue | 94] Worker output: CHANGE YAW: 90.0
+10:56:12: [INFO] [C:\Users\Mark\Desktop\WARG\autonomy-bootcamp-2026-p2\tests\integration\test_command.py | read_queue | 94] Worker output: CHANGE YAW: 116.56505117707799
+10:56:12: [INFO] [C:\Users\Mark\Desktop\WARG\autonomy-bootcamp-2026-p2\tests\integration\test_command.py | read_queue | 94] Worker output: CHANGE YAW: 45.0
+10:56:13: [INFO] [C:\Users\Mark\Desktop\WARG\autonomy-bootcamp-2026-p2\tests\integration\test_command.py | read_queue | 94] Worker output: CHANGE YAW: 63.43494882292201
+10:56:13: [INFO] [C:\Users\Mark\Desktop\WARG\autonomy-bootcamp-2026-p2\tests\integration\test_command.py | read_queue | 94] Worker output: CHANGE YAW: 90.0
+10:56:14: [INFO] [C:\Users\Mark\Desktop\WARG\autonomy-bootcamp-2026-p2\tests\integration\test_command.py | read_queue | 94] Worker output: CHANGE YAW: 26.565051177077994
+10:56:14: [INFO] [C:\Users\Mark\Desktop\WARG\autonomy-bootcamp-2026-p2\tests\integration\test_command.py | read_queue | 94] Worker output: CHANGE YAW: 45.0
+10:56:15: [INFO] [C:\Users\Mark\Desktop\WARG\autonomy-bootcamp-2026-p2\tests\integration\test_command.py | read_queue | 94] Worker output: CHANGE YAW: 90.0
+10:56:15: [INFO] [C:\Users\Mark\Desktop\WARG\autonomy-bootcamp-2026-p2\tests\integration\test_command.py | read_queue | 94] Worker output: CHANGE YAW: 45.0
+10:56:16: [INFO] [C:\Users\Mark\Desktop\WARG\autonomy-bootcamp-2026-p2\tests\integration\test_command.py | read_queue | 94] Worker output: CHANGE YAW: 90.0
+10:56:16: [INFO] [C:\Users\Mark\Desktop\WARG\autonomy-bootcamp-2026-p2\tests\integration\test_command.py | read_queue | 94] Worker output: CHANGE YAW: 135.0
+10:56:17: [INFO] [C:\Users\Mark\Desktop\WARG\autonomy-bootcamp-2026-p2\tests\integration\test_command.py | read_queue | 94] Worker output: CHANGE YAW: -26.565051177077994
+10:56:17: [INFO] [C:\Users\Mark\Desktop\WARG\autonomy-bootcamp-2026-p2\tests\integration\test_command.py | read_queue | 94] Worker output: CHANGE YAW: -45.0
+10:56:18: [INFO] [C:\Users\Mark\Desktop\WARG\autonomy-bootcamp-2026-p2\tests\integration\test_command.py | read_queue | 94] Worker output: CHANGE YAW: -90.0
+10:56:18: [INFO] [C:\Users\Mark\Desktop\WARG\autonomy-bootcamp-2026-p2\tests\integration\test_command.py | read_queue | 94] Worker output: CHANGE YAW: -45.0
+10:56:19: [INFO] [C:\Users\Mark\Desktop\WARG\autonomy-bootcamp-2026-p2\tests\integration\test_command.py | read_queue | 94] Worker output: CHANGE YAW: -90.0
+10:56:19: [INFO] [C:\Users\Mark\Desktop\WARG\autonomy-bootcamp-2026-p2\tests\integration\test_command.py | read_queue | 94] Worker output: CHANGE YAW: -135.0
+10:56:20: [INFO] [C:\Users\Mark\Desktop\WARG\autonomy-bootcamp-2026-p2\tests\integration\test_command.py | read_queue | 94] Worker output: CHANGE YAW: -63.43494882292201
+10:56:20: [INFO] [C:\Users\Mark\Desktop\WARG\autonomy-bootcamp-2026-p2\tests\integration\test_command.py | read_queue | 94] Worker output: CHANGE YAW: -90.0
+10:56:21: [INFO] [C:\Users\Mark\Desktop\WARG\autonomy-bootcamp-2026-p2\tests\integration\test_command.py | read_queue | 94] Worker output: CHANGE YAW: -116.56505117707799
+10:56:21: [INFO] [C:\Users\Mark\Desktop\WARG\autonomy-bootcamp-2026-p2\tests\integration\test_command.py | read_queue | 94] Worker output: CHANGE YAW: -45.0
+10:56:22: [INFO] [C:\Users\Mark\Desktop\WARG\autonomy-bootcamp-2026-p2\tests\integration\test_command.py | read_queue | 94] Worker output: CHANGE YAW: -63.43494882292201
+10:56:22: [INFO] [C:\Users\Mark\Desktop\WARG\autonomy-bootcamp-2026-p2\tests\integration\test_command.py | read_queue | 94] Worker output: CHANGE YAW: -90.0

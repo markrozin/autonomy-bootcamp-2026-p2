@@ -1,0 +1,12 @@
+10:58:51: [INFO] [C:\Users\Mark\Desktop\WARG\autonomy-bootcamp-2026-p2\tests\integration\mock_drones\heartbeat_sender_drone.py | main | 40] Logger initialized
+10:58:52: [INFO] [C:\Users\Mark\Desktop\WARG\autonomy-bootcamp-2026-p2\tests\integration\mock_drones\heartbeat_sender_drone.py | main | 71] Drone: Recieved heartbeat!
+10:58:53: [INFO] [C:\Users\Mark\Desktop\WARG\autonomy-bootcamp-2026-p2\tests\integration\mock_drones\heartbeat_sender_drone.py | main | 71] Drone: Recieved heartbeat!
+10:58:54: [INFO] [C:\Users\Mark\Desktop\WARG\autonomy-bootcamp-2026-p2\tests\integration\mock_drones\heartbeat_sender_drone.py | main | 71] Drone: Recieved heartbeat!
+10:58:55: [INFO] [C:\Users\Mark\Desktop\WARG\autonomy-bootcamp-2026-p2\tests\integration\mock_drones\heartbeat_sender_drone.py | main | 71] Drone: Recieved heartbeat!
+10:58:56: [INFO] [C:\Users\Mark\Desktop\WARG\autonomy-bootcamp-2026-p2\tests\integration\mock_drones\heartbeat_sender_drone.py | main | 71] Drone: Recieved heartbeat!
+10:58:57: [INFO] [C:\Users\Mark\Desktop\WARG\autonomy-bootcamp-2026-p2\tests\integration\mock_drones\heartbeat_sender_drone.py | main | 71] Drone: Recieved heartbeat!
+10:58:58: [INFO] [C:\Users\Mark\Desktop\WARG\autonomy-bootcamp-2026-p2\tests\integration\mock_drones\heartbeat_sender_drone.py | main | 71] Drone: Recieved heartbeat!
+10:58:59: [INFO] [C:\Users\Mark\Desktop\WARG\autonomy-bootcamp-2026-p2\tests\integration\mock_drones\heartbeat_sender_drone.py | main | 71] Drone: Recieved heartbeat!
+10:59:00: [INFO] [C:\Users\Mark\Desktop\WARG\autonomy-bootcamp-2026-p2\tests\integration\mock_drones\heartbeat_sender_drone.py | main | 71] Drone: Recieved heartbeat!
+10:59:01: [INFO] [C:\Users\Mark\Desktop\WARG\autonomy-bootcamp-2026-p2\tests\integration\mock_drones\heartbeat_sender_drone.py | main | 71] Drone: Recieved heartbeat!
+10:59:02: [ERROR] [C:\Users\Mark\Desktop\WARG\autonomy-bootcamp-2026-p2\tests\integration\mock_drones\heartbeat_sender_drone.py | main | 77] Recieved extra heartbeat

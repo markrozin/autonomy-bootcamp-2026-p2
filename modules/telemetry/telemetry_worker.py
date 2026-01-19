@@ -18,13 +18,16 @@ from ..common.modules.logger import logger
 # =================================================================================================
 def telemetry_worker(
     connection: mavutil.mavfile,
-    args,  # Place your own arguments here
-    # Add other necessary worker arguments here
+    output_queue: queue_proxy_wrapper.QueueProxyWrapper,
+    controller: worker_controller.WorkerController,
 ) -> None:
     """
-    Worker process.
+    Worker process that gathers telemetry data (position and attitude) from the drone.
 
-    args... describe what the arguments are
+    Parameters:
+        connection: MAVLink connection to the drone.
+        output_queue: Queue to output TelemetryData objects.
+        controller: WorkerController for managing pause/exit requests.
     """
     # =============================================================================================
     #                          ↑ BOOTCAMPERS MODIFY ABOVE THIS COMMENT ↑
@@ -47,8 +50,30 @@ def telemetry_worker(
     #                          ↓ BOOTCAMPERS MODIFY BELOW THIS COMMENT ↓
     # =============================================================================================
     # Instantiate class object (telemetry.Telemetry)
+    result, telemetry_instance = telemetry.Telemetry.create(connection, local_logger)
+    if not result:
+        local_logger.error("Failed to create Telemetry")
+        return
+
+    # Get Pylance to stop complaining
+    assert telemetry_instance is not None
+
+    local_logger.info("Telemetry created successfully")
 
     # Main loop: do work.
+    while not controller.is_exit_requested():
+        # Check if pause has been requested
+        controller.check_pause()
+
+        # Receive telemetry data
+        result, telemetry_data = telemetry_instance.run()
+
+        if result and telemetry_data is not None:
+            # Output the telemetry data to the queue
+            output_queue.queue.put(telemetry_data)
+            local_logger.info(f"Telemetry data sent to queue: {telemetry_data}")
+
+    local_logger.info("Telemetry worker exiting")
 
 
 # =================================================================================================

@@ -1,0 +1,14 @@
+23:41:54: [INFO] [C:\Users\Mark\Desktop\WARG\autonomy-bootcamp-2026-p2\modules\heartbeat\heartbeat_sender_worker.py | heartbeat_sender_worker | 49] Logger initialized
+23:41:54: [INFO] [C:\Users\Mark\Desktop\WARG\autonomy-bootcamp-2026-p2\modules\heartbeat\heartbeat_sender_worker.py | heartbeat_sender_worker | 63] HeartbeatSender created successfully
+23:41:54: [INFO] [C:\Users\Mark\Desktop\WARG\autonomy-bootcamp-2026-p2\modules\heartbeat\heartbeat_sender_worker.py | heartbeat_sender_worker | 73] Heartbeat sent
+23:41:55: [INFO] [C:\Users\Mark\Desktop\WARG\autonomy-bootcamp-2026-p2\modules\heartbeat\heartbeat_sender_worker.py | heartbeat_sender_worker | 73] Heartbeat sent
+23:41:56: [INFO] [C:\Users\Mark\Desktop\WARG\autonomy-bootcamp-2026-p2\modules\heartbeat\heartbeat_sender_worker.py | heartbeat_sender_worker | 73] Heartbeat sent
+23:41:57: [INFO] [C:\Users\Mark\Desktop\WARG\autonomy-bootcamp-2026-p2\modules\heartbeat\heartbeat_sender_worker.py | heartbeat_sender_worker | 73] Heartbeat sent
+23:41:58: [INFO] [C:\Users\Mark\Desktop\WARG\autonomy-bootcamp-2026-p2\modules\heartbeat\heartbeat_sender_worker.py | heartbeat_sender_worker | 73] Heartbeat sent
+23:41:59: [INFO] [C:\Users\Mark\Desktop\WARG\autonomy-bootcamp-2026-p2\modules\heartbeat\heartbeat_sender_worker.py | heartbeat_sender_worker | 73] Heartbeat sent
+23:42:00: [INFO] [C:\Users\Mark\Desktop\WARG\autonomy-bootcamp-2026-p2\modules\heartbeat\heartbeat_sender_worker.py | heartbeat_sender_worker | 73] Heartbeat sent
+23:42:01: [INFO] [C:\Users\Mark\Desktop\WARG\autonomy-bootcamp-2026-p2\modules\heartbeat\heartbeat_sender_worker.py | heartbeat_sender_worker | 73] Heartbeat sent
+23:42:02: [INFO] [C:\Users\Mark\Desktop\WARG\autonomy-bootcamp-2026-p2\modules\heartbeat\heartbeat_sender_worker.py | heartbeat_sender_worker | 73] Heartbeat sent
+23:42:03: [INFO] [C:\Users\Mark\Desktop\WARG\autonomy-bootcamp-2026-p2\modules\heartbeat\heartbeat_sender_worker.py | heartbeat_sender_worker | 73] Heartbeat sent
+23:42:04: [INFO] [C:\Users\Mark\Desktop\WARG\autonomy-bootcamp-2026-p2\modules\heartbeat\heartbeat_sender_worker.py | heartbeat_sender_worker | 73] Heartbeat sent
+23:42:05: [INFO] [C:\Users\Mark\Desktop\WARG\autonomy-bootcamp-2026-p2\modules\heartbeat\heartbeat_sender_worker.py | heartbeat_sender_worker | 80] Heartbeat sender worker exiting

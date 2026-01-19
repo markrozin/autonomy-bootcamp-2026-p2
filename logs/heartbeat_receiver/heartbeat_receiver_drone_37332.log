@@ -1,0 +1,13 @@
+10:54:33: [INFO] [C:\Users\Mark\Desktop\WARG\autonomy-bootcamp-2026-p2\tests\integration\mock_drones\heartbeat_receiver_drone.py | main | 42] Logger initialized
+10:54:33: [INFO] [C:\Users\Mark\Desktop\WARG\autonomy-bootcamp-2026-p2\tests\integration\mock_drones\heartbeat_receiver_drone.py | send_heartbeats | 59] Drone: Sent a heartbeat
+10:54:34: [INFO] [C:\Users\Mark\Desktop\WARG\autonomy-bootcamp-2026-p2\tests\integration\mock_drones\heartbeat_receiver_drone.py | send_heartbeats | 59] Drone: Sent a heartbeat
+10:54:35: [INFO] [C:\Users\Mark\Desktop\WARG\autonomy-bootcamp-2026-p2\tests\integration\mock_drones\heartbeat_receiver_drone.py | send_heartbeats | 59] Drone: Sent a heartbeat
+10:54:36: [INFO] [C:\Users\Mark\Desktop\WARG\autonomy-bootcamp-2026-p2\tests\integration\mock_drones\heartbeat_receiver_drone.py | send_heartbeats | 59] Drone: Sent a heartbeat
+10:54:37: [INFO] [C:\Users\Mark\Desktop\WARG\autonomy-bootcamp-2026-p2\tests\integration\mock_drones\heartbeat_receiver_drone.py | send_heartbeats | 59] Drone: Sent a heartbeat
+10:54:46: [INFO] [C:\Users\Mark\Desktop\WARG\autonomy-bootcamp-2026-p2\tests\integration\mock_drones\heartbeat_receiver_drone.py | send_heartbeats | 59] Drone: Sent a heartbeat
+10:54:47: [INFO] [C:\Users\Mark\Desktop\WARG\autonomy-bootcamp-2026-p2\tests\integration\mock_drones\heartbeat_receiver_drone.py | send_heartbeats | 59] Drone: Sent a heartbeat
+10:54:48: [INFO] [C:\Users\Mark\Desktop\WARG\autonomy-bootcamp-2026-p2\tests\integration\mock_drones\heartbeat_receiver_drone.py | send_heartbeats | 59] Drone: Sent a heartbeat
+10:54:49: [INFO] [C:\Users\Mark\Desktop\WARG\autonomy-bootcamp-2026-p2\tests\integration\mock_drones\heartbeat_receiver_drone.py | send_heartbeats | 59] Drone: Sent a heartbeat
+10:54:50: [INFO] [C:\Users\Mark\Desktop\WARG\autonomy-bootcamp-2026-p2\tests\integration\mock_drones\heartbeat_receiver_drone.py | send_heartbeats | 59] Drone: Sent a heartbeat
+10:54:52: [INFO] [C:\Users\Mark\Desktop\WARG\autonomy-bootcamp-2026-p2\tests\integration\mock_drones\heartbeat_receiver_drone.py | send_heartbeats | 59] Drone: Sent a heartbeat
+10:54:53: [INFO] [C:\Users\Mark\Desktop\WARG\autonomy-bootcamp-2026-p2\tests\integration\mock_drones\heartbeat_receiver_drone.py | main | 79] Passesd!

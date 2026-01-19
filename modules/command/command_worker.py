@@ -19,13 +19,19 @@ from ..common.modules.logger import logger
 def command_worker(
     connection: mavutil.mavfile,
     target: command.Position,
-    args,  # Place your own arguments here
-    # Add other necessary worker arguments here
+    input_queue: queue_proxy_wrapper.QueueProxyWrapper,
+    output_queue: queue_proxy_wrapper.QueueProxyWrapper,
+    controller: worker_controller.WorkerController,
 ) -> None:
     """
-    Worker process.
+    Worker process that makes decisions based on telemetry data and sends commands.
 
-    args... describe what the arguments are
+    Parameters:
+        connection: MAVLink connection to the drone.
+        target: Target position to face and match altitude.
+        input_queue: Queue to receive TelemetryData from.
+        output_queue: Queue to output command status strings.
+        controller: WorkerController for managing pause/exit requests.
     """
     # =============================================================================================
     #                          ↑ BOOTCAMPERS MODIFY ABOVE THIS COMMENT ↑
@@ -48,8 +54,45 @@ def command_worker(
     #                          ↓ BOOTCAMPERS MODIFY BELOW THIS COMMENT ↓
     # =============================================================================================
     # Instantiate class object (command.Command)
+    result, command_instance = command.Command.create(connection, target, local_logger)
+    if not result:
+        local_logger.error("Failed to create Command")
+        return
+
+    # Get Pylance to stop complaining
+    assert command_instance is not None
+
+    local_logger.info("Command created successfully")
 
     # Main loop: do work.
+    while not controller.is_exit_requested():
+        # Check if pause has been requested
+        controller.check_pause()
+
+        try:
+            # Get telemetry data from input queue with timeout
+            telemetry_data = input_queue.queue.get(timeout=0.5)
+
+            # Check for sentinel value
+            if telemetry_data is None:
+                local_logger.info("Received sentinel value, exiting")
+                break
+
+            local_logger.info(f"Received telemetry data: {telemetry_data}")
+
+            # Process the telemetry data and send commands
+            result, status = command_instance.run(telemetry_data)
+
+            if result and status is not None:
+                # Output the command status to the queue
+                output_queue.queue.put(status)
+                local_logger.info(f"Command status sent to queue: {status}")
+
+        except Exception:  # pylint: disable=broad-except
+            # Queue.get with timeout raises Empty exception if no data
+            continue
+
+    local_logger.info("Command worker exiting")
 
 
 # =================================================================================================

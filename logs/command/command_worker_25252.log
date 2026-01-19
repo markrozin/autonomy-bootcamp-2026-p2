@@ -1,0 +1,552 @@
+10:56:07: [INFO] [C:\Users\Mark\Desktop\WARG\autonomy-bootcamp-2026-p2\modules\command\command_worker.py | command_worker | 51] Logger initialized
+10:56:07: [INFO] [C:\Users\Mark\Desktop\WARG\autonomy-bootcamp-2026-p2\modules\command\command_worker.py | command_worker | 65] Command created successfully
+10:56:07: [INFO] [C:\Users\Mark\Desktop\WARG\autonomy-bootcamp-2026-p2\modules\command\command_worker.py | command_worker | 81] Received telemetry data: {
+            time_since_boot: None,
+            x: 0,
+            y: 0,
+            z: 29,
+            x_velocity: 0,
+            y_velocity: 0,
+            z_velocity: 4,
+            roll: None,
+            pitch: None,
+            yaw: 0,
+            roll_speed: None,
+            pitch_speed: None,
+            yaw_speed: None
+        }
+10:56:07: [INFO] [C:\Users\Mark\Desktop\WARG\autonomy-bootcamp-2026-p2\modules\command\command.py | run | 125] Average velocity: (0.000, 0.000, 4.000) m/s
+10:56:07: [INFO] [C:\Users\Mark\Desktop\WARG\autonomy-bootcamp-2026-p2\modules\command\command.py | run | 145] Sent altitude change command: delta_z=1.00m
+10:56:07: [INFO] [C:\Users\Mark\Desktop\WARG\autonomy-bootcamp-2026-p2\modules\command\command_worker.py | command_worker | 89] Command status sent to queue: CHANGE ALTITUDE: 1
+10:56:08: [INFO] [C:\Users\Mark\Desktop\WARG\autonomy-bootcamp-2026-p2\modules\command\command_worker.py | command_worker | 81] Received telemetry data: {
+            time_since_boot: None,
+            x: 0,
+            y: 0,
+            z: 31,
+            x_velocity: 0,
+            y_velocity: 0,
+            z_velocity: -2,
+            roll: None,
+            pitch: None,
+            yaw: 0,
+            roll_speed: None,
+            pitch_speed: None,
+            yaw_speed: None
+        }
+10:56:08: [INFO] [C:\Users\Mark\Desktop\WARG\autonomy-bootcamp-2026-p2\modules\command\command.py | run | 125] Average velocity: (0.000, 0.000, 1.000) m/s
+10:56:08: [INFO] [C:\Users\Mark\Desktop\WARG\autonomy-bootcamp-2026-p2\modules\command\command.py | run | 145] Sent altitude change command: delta_z=-1.00m
+10:56:08: [INFO] [C:\Users\Mark\Desktop\WARG\autonomy-bootcamp-2026-p2\modules\command\command_worker.py | command_worker | 89] Command status sent to queue: CHANGE ALTITUDE: -1
+10:56:08: [INFO] [C:\Users\Mark\Desktop\WARG\autonomy-bootcamp-2026-p2\modules\command\command_worker.py | command_worker | 81] Received telemetry data: {
+            time_since_boot: None,
+            x: 0,
+            y: 0,
+            z: 30.2,
+            x_velocity: 0,
+            y_velocity: 0,
+            z_velocity: 0,
+            roll: None,
+            pitch: None,
+            yaw: 1.1071487177940904,
+            roll_speed: None,
+            pitch_speed: None,
+            yaw_speed: None
+        }
+10:56:08: [INFO] [C:\Users\Mark\Desktop\WARG\autonomy-bootcamp-2026-p2\modules\command\command.py | run | 125] Average velocity: (0.000, 0.000, 0.667) m/s
+10:56:09: [INFO] [C:\Users\Mark\Desktop\WARG\autonomy-bootcamp-2026-p2\modules\command\command_worker.py | command_worker | 81] Received telemetry data: {
+            time_since_boot: None,
+            x: 0,
+            y: 0,
+            z: 29.8,
+            x_velocity: 0,
+            y_velocity: 0,
+            z_velocity: 0,
+            roll: None,
+            pitch: None,
+            yaw: 1.1071487177940904,
+            roll_speed: None,
+            pitch_speed: None,
+            yaw_speed: None
+        }
+10:56:09: [INFO] [C:\Users\Mark\Desktop\WARG\autonomy-bootcamp-2026-p2\modules\command\command.py | run | 125] Average velocity: (0.000, 0.000, 0.500) m/s
+10:56:09: [INFO] [C:\Users\Mark\Desktop\WARG\autonomy-bootcamp-2026-p2\modules\command\command_worker.py | command_worker | 81] Received telemetry data: {
+            time_since_boot: None,
+            x: 0,
+            y: 0,
+            z: 30,
+            x_velocity: 0,
+            y_velocity: 0,
+            z_velocity: 0,
+            roll: None,
+            pitch: None,
+            yaw: 1.1071487177940904,
+            roll_speed: None,
+            pitch_speed: None,
+            yaw_speed: None
+        }
+10:56:09: [INFO] [C:\Users\Mark\Desktop\WARG\autonomy-bootcamp-2026-p2\modules\command\command.py | run | 125] Average velocity: (0.000, 0.000, 0.400) m/s
+10:56:10: [INFO] [C:\Users\Mark\Desktop\WARG\autonomy-bootcamp-2026-p2\modules\command\command_worker.py | command_worker | 81] Received telemetry data: {
+            time_since_boot: None,
+            x: 0,
+            y: 0,
+            z: 30,
+            x_velocity: 0,
+            y_velocity: 0,
+            z_velocity: 0,
+            roll: None,
+            pitch: None,
+            yaw: 1.142055302833977,
+            roll_speed: None,
+            pitch_speed: None,
+            yaw_speed: None
+        }
+10:56:10: [INFO] [C:\Users\Mark\Desktop\WARG\autonomy-bootcamp-2026-p2\modules\command\command.py | run | 125] Average velocity: (0.000, 0.000, 0.333) m/s
+10:56:10: [INFO] [C:\Users\Mark\Desktop\WARG\autonomy-bootcamp-2026-p2\modules\command\command_worker.py | command_worker | 81] Received telemetry data: {
+            time_since_boot: None,
+            x: 0,
+            y: 0,
+            z: 30,
+            x_velocity: 0,
+            y_velocity: 0,
+            z_velocity: 0,
+            roll: None,
+            pitch: None,
+            yaw: 1.072242132754204,
+            roll_speed: None,
+            pitch_speed: None,
+            yaw_speed: None
+        }
+10:56:10: [INFO] [C:\Users\Mark\Desktop\WARG\autonomy-bootcamp-2026-p2\modules\command\command.py | run | 125] Average velocity: (0.000, 0.000, 0.286) m/s
+10:56:11: [INFO] [C:\Users\Mark\Desktop\WARG\autonomy-bootcamp-2026-p2\modules\command\command_worker.py | command_worker | 81] Received telemetry data: {
+            time_since_boot: None,
+            x: 0,
+            y: 0,
+            z: 30,
+            x_velocity: 0,
+            y_velocity: 20,
+            z_velocity: 0,
+            roll: None,
+            pitch: None,
+            yaw: 0,
+            roll_speed: None,
+            pitch_speed: None,
+            yaw_speed: None
+        }
+10:56:11: [INFO] [C:\Users\Mark\Desktop\WARG\autonomy-bootcamp-2026-p2\modules\command\command.py | run | 125] Average velocity: (0.000, 2.500, 0.250) m/s
+10:56:11: [INFO] [C:\Users\Mark\Desktop\WARG\autonomy-bootcamp-2026-p2\modules\command\command.py | run | 191] Sent yaw change command: delta_yaw=63.43deg
+10:56:11: [INFO] [C:\Users\Mark\Desktop\WARG\autonomy-bootcamp-2026-p2\modules\command\command_worker.py | command_worker | 89] Command status sent to queue: CHANGE YAW: 63.43494882292201
+10:56:11: [INFO] [C:\Users\Mark\Desktop\WARG\autonomy-bootcamp-2026-p2\modules\command\command_worker.py | command_worker | 81] Received telemetry data: {
+            time_since_boot: None,
+            x: 10,
+            y: 0,
+            z: 30,
+            x_velocity: 0,
+            y_velocity: 20,
+            z_velocity: 0,
+            roll: None,
+            pitch: None,
+            yaw: 0,
+            roll_speed: None,
+            pitch_speed: None,
+            yaw_speed: None
+        }
+10:56:11: [INFO] [C:\Users\Mark\Desktop\WARG\autonomy-bootcamp-2026-p2\modules\command\command.py | run | 125] Average velocity: (0.000, 4.444, 0.222) m/s
+10:56:11: [INFO] [C:\Users\Mark\Desktop\WARG\autonomy-bootcamp-2026-p2\modules\command\command.py | run | 191] Sent yaw change command: delta_yaw=90.00deg
+10:56:11: [INFO] [C:\Users\Mark\Desktop\WARG\autonomy-bootcamp-2026-p2\modules\command\command_worker.py | command_worker | 89] Command status sent to queue: CHANGE YAW: 90.0
+10:56:12: [INFO] [C:\Users\Mark\Desktop\WARG\autonomy-bootcamp-2026-p2\modules\command\command_worker.py | command_worker | 81] Received telemetry data: {
+            time_since_boot: None,
+            x: 20,
+            y: 0,
+            z: 30,
+            x_velocity: 0,
+            y_velocity: 20,
+            z_velocity: 0,
+            roll: None,
+            pitch: None,
+            yaw: 0,
+            roll_speed: None,
+            pitch_speed: None,
+            yaw_speed: None
+        }
+10:56:12: [INFO] [C:\Users\Mark\Desktop\WARG\autonomy-bootcamp-2026-p2\modules\command\command.py | run | 125] Average velocity: (0.000, 6.000, 0.200) m/s
+10:56:12: [INFO] [C:\Users\Mark\Desktop\WARG\autonomy-bootcamp-2026-p2\modules\command\command.py | run | 191] Sent yaw change command: delta_yaw=116.57deg
+10:56:12: [INFO] [C:\Users\Mark\Desktop\WARG\autonomy-bootcamp-2026-p2\modules\command\command_worker.py | command_worker | 89] Command status sent to queue: CHANGE YAW: 116.56505117707799
+10:56:12: [INFO] [C:\Users\Mark\Desktop\WARG\autonomy-bootcamp-2026-p2\modules\command\command_worker.py | command_worker | 81] Received telemetry data: {
+            time_since_boot: None,
+            x: 30,
+            y: 0,
+            z: 30,
+            x_velocity: 20,
+            y_velocity: 0,
+            z_velocity: 0,
+            roll: None,
+            pitch: None,
+            yaw: 1.5707963267948966,
+            roll_speed: None,
+            pitch_speed: None,
+            yaw_speed: None
+        }
+10:56:12: [INFO] [C:\Users\Mark\Desktop\WARG\autonomy-bootcamp-2026-p2\modules\command\command.py | run | 125] Average velocity: (1.818, 5.455, 0.182) m/s
+10:56:12: [INFO] [C:\Users\Mark\Desktop\WARG\autonomy-bootcamp-2026-p2\modules\command\command.py | run | 191] Sent yaw change command: delta_yaw=45.00deg
+10:56:12: [INFO] [C:\Users\Mark\Desktop\WARG\autonomy-bootcamp-2026-p2\modules\command\command_worker.py | command_worker | 89] Command status sent to queue: CHANGE YAW: 45.0
+10:56:13: [INFO] [C:\Users\Mark\Desktop\WARG\autonomy-bootcamp-2026-p2\modules\command\command_worker.py | command_worker | 81] Received telemetry data: {
+            time_since_boot: None,
+            x: 30,
+            y: 10,
+            z: 30,
+            x_velocity: 20,
+            y_velocity: 0,
+            z_velocity: 0,
+            roll: None,
+            pitch: None,
+            yaw: 1.5707963267948966,
+            roll_speed: None,
+            pitch_speed: None,
+            yaw_speed: None
+        }
+10:56:13: [INFO] [C:\Users\Mark\Desktop\WARG\autonomy-bootcamp-2026-p2\modules\command\command.py | run | 125] Average velocity: (3.333, 5.000, 0.167) m/s
+10:56:13: [INFO] [C:\Users\Mark\Desktop\WARG\autonomy-bootcamp-2026-p2\modules\command\command.py | run | 191] Sent yaw change command: delta_yaw=63.43deg
+10:56:13: [INFO] [C:\Users\Mark\Desktop\WARG\autonomy-bootcamp-2026-p2\modules\command\command_worker.py | command_worker | 89] Command status sent to queue: CHANGE YAW: 63.43494882292201
+10:56:13: [INFO] [C:\Users\Mark\Desktop\WARG\autonomy-bootcamp-2026-p2\modules\command\command_worker.py | command_worker | 81] Received telemetry data: {
+            time_since_boot: None,
+            x: 30,
+            y: 20,
+            z: 30,
+            x_velocity: 20,
+            y_velocity: 0,
+            z_velocity: 0,
+            roll: None,
+            pitch: None,
+            yaw: 1.5707963267948966,
+            roll_speed: None,
+            pitch_speed: None,
+            yaw_speed: None
+        }
+10:56:13: [INFO] [C:\Users\Mark\Desktop\WARG\autonomy-bootcamp-2026-p2\modules\command\command.py | run | 125] Average velocity: (4.615, 4.615, 0.154) m/s
+10:56:13: [INFO] [C:\Users\Mark\Desktop\WARG\autonomy-bootcamp-2026-p2\modules\command\command.py | run | 191] Sent yaw change command: delta_yaw=90.00deg
+10:56:13: [INFO] [C:\Users\Mark\Desktop\WARG\autonomy-bootcamp-2026-p2\modules\command\command_worker.py | command_worker | 89] Command status sent to queue: CHANGE YAW: 90.0
+10:56:14: [INFO] [C:\Users\Mark\Desktop\WARG\autonomy-bootcamp-2026-p2\modules\command\command_worker.py | command_worker | 81] Received telemetry data: {
+            time_since_boot: None,
+            x: 30,
+            y: 30,
+            z: 30,
+            x_velocity: 0,
+            y_velocity: -20,
+            z_velocity: 0,
+            roll: None,
+            pitch: None,
+            yaw: 3.141592653589793,
+            roll_speed: None,
+            pitch_speed: None,
+            yaw_speed: None
+        }
+10:56:14: [INFO] [C:\Users\Mark\Desktop\WARG\autonomy-bootcamp-2026-p2\modules\command\command.py | run | 125] Average velocity: (4.286, 2.857, 0.143) m/s
+10:56:14: [INFO] [C:\Users\Mark\Desktop\WARG\autonomy-bootcamp-2026-p2\modules\command\command.py | run | 191] Sent yaw change command: delta_yaw=26.57deg
+10:56:14: [INFO] [C:\Users\Mark\Desktop\WARG\autonomy-bootcamp-2026-p2\modules\command\command_worker.py | command_worker | 89] Command status sent to queue: CHANGE YAW: 26.565051177077994
+10:56:14: [INFO] [C:\Users\Mark\Desktop\WARG\autonomy-bootcamp-2026-p2\modules\command\command_worker.py | command_worker | 81] Received telemetry data: {
+            time_since_boot: None,
+            x: 20,
+            y: 30,
+            z: 30,
+            x_velocity: 0,
+            y_velocity: -20,
+            z_velocity: 0,
+            roll: None,
+            pitch: None,
+            yaw: -3.141592653589793,
+            roll_speed: None,
+            pitch_speed: None,
+            yaw_speed: None
+        }
+10:56:14: [INFO] [C:\Users\Mark\Desktop\WARG\autonomy-bootcamp-2026-p2\modules\command\command.py | run | 125] Average velocity: (4.000, 1.333, 0.133) m/s
+10:56:14: [INFO] [C:\Users\Mark\Desktop\WARG\autonomy-bootcamp-2026-p2\modules\command\command.py | run | 191] Sent yaw change command: delta_yaw=45.00deg
+10:56:14: [INFO] [C:\Users\Mark\Desktop\WARG\autonomy-bootcamp-2026-p2\modules\command\command_worker.py | command_worker | 89] Command status sent to queue: CHANGE YAW: 45.0
+10:56:15: [INFO] [C:\Users\Mark\Desktop\WARG\autonomy-bootcamp-2026-p2\modules\command\command_worker.py | command_worker | 81] Received telemetry data: {
+            time_since_boot: None,
+            x: 10,
+            y: 30,
+            z: 30,
+            x_velocity: 0,
+            y_velocity: -20,
+            z_velocity: 0,
+            roll: None,
+            pitch: None,
+            yaw: 3.141592653589793,
+            roll_speed: None,
+            pitch_speed: None,
+            yaw_speed: None
+        }
+10:56:15: [INFO] [C:\Users\Mark\Desktop\WARG\autonomy-bootcamp-2026-p2\modules\command\command.py | run | 125] Average velocity: (3.750, 0.000, 0.125) m/s
+10:56:15: [INFO] [C:\Users\Mark\Desktop\WARG\autonomy-bootcamp-2026-p2\modules\command\command.py | run | 191] Sent yaw change command: delta_yaw=90.00deg
+10:56:15: [INFO] [C:\Users\Mark\Desktop\WARG\autonomy-bootcamp-2026-p2\modules\command\command_worker.py | command_worker | 89] Command status sent to queue: CHANGE YAW: 90.0
+10:56:15: [INFO] [C:\Users\Mark\Desktop\WARG\autonomy-bootcamp-2026-p2\modules\command\command_worker.py | command_worker | 81] Received telemetry data: {
+            time_since_boot: None,
+            x: 0,
+            y: 30,
+            z: 30,
+            x_velocity: -20,
+            y_velocity: 0,
+            z_velocity: 0,
+            roll: None,
+            pitch: None,
+            yaw: -1.5707963267948966,
+            roll_speed: None,
+            pitch_speed: None,
+            yaw_speed: None
+        }
+10:56:15: [INFO] [C:\Users\Mark\Desktop\WARG\autonomy-bootcamp-2026-p2\modules\command\command.py | run | 125] Average velocity: (2.353, 0.000, 0.118) m/s
+10:56:15: [INFO] [C:\Users\Mark\Desktop\WARG\autonomy-bootcamp-2026-p2\modules\command\command.py | run | 191] Sent yaw change command: delta_yaw=45.00deg
+10:56:15: [INFO] [C:\Users\Mark\Desktop\WARG\autonomy-bootcamp-2026-p2\modules\command\command_worker.py | command_worker | 89] Command status sent to queue: CHANGE YAW: 45.0
+10:56:16: [INFO] [C:\Users\Mark\Desktop\WARG\autonomy-bootcamp-2026-p2\modules\command\command_worker.py | command_worker | 81] Received telemetry data: {
+            time_since_boot: None,
+            x: 0,
+            y: 20,
+            z: 30,
+            x_velocity: -20,
+            y_velocity: 0,
+            z_velocity: 0,
+            roll: None,
+            pitch: None,
+            yaw: -1.5707963267948966,
+            roll_speed: None,
+            pitch_speed: None,
+            yaw_speed: None
+        }
+10:56:16: [INFO] [C:\Users\Mark\Desktop\WARG\autonomy-bootcamp-2026-p2\modules\command\command.py | run | 125] Average velocity: (1.111, 0.000, 0.111) m/s
+10:56:16: [INFO] [C:\Users\Mark\Desktop\WARG\autonomy-bootcamp-2026-p2\modules\command\command.py | run | 191] Sent yaw change command: delta_yaw=90.00deg
+10:56:16: [INFO] [C:\Users\Mark\Desktop\WARG\autonomy-bootcamp-2026-p2\modules\command\command_worker.py | command_worker | 89] Command status sent to queue: CHANGE YAW: 90.0
+10:56:16: [INFO] [C:\Users\Mark\Desktop\WARG\autonomy-bootcamp-2026-p2\modules\command\command_worker.py | command_worker | 81] Received telemetry data: {
+            time_since_boot: None,
+            x: 0,
+            y: 10,
+            z: 30,
+            x_velocity: -20,
+            y_velocity: 0,
+            z_velocity: 0,
+            roll: None,
+            pitch: None,
+            yaw: -1.5707963267948966,
+            roll_speed: None,
+            pitch_speed: None,
+            yaw_speed: None
+        }
+10:56:16: [INFO] [C:\Users\Mark\Desktop\WARG\autonomy-bootcamp-2026-p2\modules\command\command.py | run | 125] Average velocity: (0.000, 0.000, 0.105) m/s
+10:56:16: [INFO] [C:\Users\Mark\Desktop\WARG\autonomy-bootcamp-2026-p2\modules\command\command.py | run | 191] Sent yaw change command: delta_yaw=135.00deg
+10:56:16: [INFO] [C:\Users\Mark\Desktop\WARG\autonomy-bootcamp-2026-p2\modules\command\command_worker.py | command_worker | 89] Command status sent to queue: CHANGE YAW: 135.0
+10:56:17: [INFO] [C:\Users\Mark\Desktop\WARG\autonomy-bootcamp-2026-p2\modules\command\command_worker.py | command_worker | 81] Received telemetry data: {
+            time_since_boot: None,
+            x: 0,
+            y: 0,
+            z: 30,
+            x_velocity: 0,
+            y_velocity: 20,
+            z_velocity: 0,
+            roll: None,
+            pitch: None,
+            yaw: 1.5707963267948966,
+            roll_speed: None,
+            pitch_speed: None,
+            yaw_speed: None
+        }
+10:56:17: [INFO] [C:\Users\Mark\Desktop\WARG\autonomy-bootcamp-2026-p2\modules\command\command.py | run | 125] Average velocity: (0.000, 1.000, 0.100) m/s
+10:56:17: [INFO] [C:\Users\Mark\Desktop\WARG\autonomy-bootcamp-2026-p2\modules\command\command.py | run | 191] Sent yaw change command: delta_yaw=-26.57deg
+10:56:17: [INFO] [C:\Users\Mark\Desktop\WARG\autonomy-bootcamp-2026-p2\modules\command\command_worker.py | command_worker | 89] Command status sent to queue: CHANGE YAW: -26.565051177077994
+10:56:17: [INFO] [C:\Users\Mark\Desktop\WARG\autonomy-bootcamp-2026-p2\modules\command\command_worker.py | command_worker | 81] Received telemetry data: {
+            time_since_boot: None,
+            x: 0,
+            y: 10,
+            z: 30,
+            x_velocity: 0,
+            y_velocity: 20,
+            z_velocity: 0,
+            roll: None,
+            pitch: None,
+            yaw: 1.5707963267948966,
+            roll_speed: None,
+            pitch_speed: None,
+            yaw_speed: None
+        }
+10:56:17: [INFO] [C:\Users\Mark\Desktop\WARG\autonomy-bootcamp-2026-p2\modules\command\command.py | run | 125] Average velocity: (0.000, 1.905, 0.095) m/s
+10:56:17: [INFO] [C:\Users\Mark\Desktop\WARG\autonomy-bootcamp-2026-p2\modules\command\command.py | run | 191] Sent yaw change command: delta_yaw=-45.00deg
+10:56:17: [INFO] [C:\Users\Mark\Desktop\WARG\autonomy-bootcamp-2026-p2\modules\command\command_worker.py | command_worker | 89] Command status sent to queue: CHANGE YAW: -45.0
+10:56:18: [INFO] [C:\Users\Mark\Desktop\WARG\autonomy-bootcamp-2026-p2\modules\command\command_worker.py | command_worker | 81] Received telemetry data: {
+            time_since_boot: None,
+            x: 0,
+            y: 20,
+            z: 30,
+            x_velocity: 0,
+            y_velocity: 20,
+            z_velocity: 0,
+            roll: None,
+            pitch: None,
+            yaw: 1.5707963267948966,
+            roll_speed: None,
+            pitch_speed: None,
+            yaw_speed: None
+        }
+10:56:18: [INFO] [C:\Users\Mark\Desktop\WARG\autonomy-bootcamp-2026-p2\modules\command\command.py | run | 125] Average velocity: (0.000, 2.727, 0.091) m/s
+10:56:18: [INFO] [C:\Users\Mark\Desktop\WARG\autonomy-bootcamp-2026-p2\modules\command\command.py | run | 191] Sent yaw change command: delta_yaw=-90.00deg
+10:56:18: [INFO] [C:\Users\Mark\Desktop\WARG\autonomy-bootcamp-2026-p2\modules\command\command_worker.py | command_worker | 89] Command status sent to queue: CHANGE YAW: -90.0
+10:56:18: [INFO] [C:\Users\Mark\Desktop\WARG\autonomy-bootcamp-2026-p2\modules\command\command_worker.py | command_worker | 81] Received telemetry data: {
+            time_since_boot: None,
+            x: 0,
+            y: 30,
+            z: 30,
+            x_velocity: 20,
+            y_velocity: 0,
+            z_velocity: 0,
+            roll: None,
+            pitch: None,
+            yaw: 0,
+            roll_speed: None,
+            pitch_speed: None,
+            yaw_speed: None
+        }
+10:56:18: [INFO] [C:\Users\Mark\Desktop\WARG\autonomy-bootcamp-2026-p2\modules\command\command.py | run | 125] Average velocity: (0.870, 2.609, 0.087) m/s
+10:56:18: [INFO] [C:\Users\Mark\Desktop\WARG\autonomy-bootcamp-2026-p2\modules\command\command.py | run | 191] Sent yaw change command: delta_yaw=-45.00deg
+10:56:18: [INFO] [C:\Users\Mark\Desktop\WARG\autonomy-bootcamp-2026-p2\modules\command\command_worker.py | command_worker | 89] Command status sent to queue: CHANGE YAW: -45.0
+10:56:19: [INFO] [C:\Users\Mark\Desktop\WARG\autonomy-bootcamp-2026-p2\modules\command\command_worker.py | command_worker | 81] Received telemetry data: {
+            time_since_boot: None,
+            x: 10,
+            y: 30,
+            z: 30,
+            x_velocity: 20,
+            y_velocity: 0,
+            z_velocity: 0,
+            roll: None,
+            pitch: None,
+            yaw: 0,
+            roll_speed: None,
+            pitch_speed: None,
+            yaw_speed: None
+        }
+10:56:19: [INFO] [C:\Users\Mark\Desktop\WARG\autonomy-bootcamp-2026-p2\modules\command\command.py | run | 125] Average velocity: (1.667, 2.500, 0.083) m/s
+10:56:19: [INFO] [C:\Users\Mark\Desktop\WARG\autonomy-bootcamp-2026-p2\modules\command\command.py | run | 191] Sent yaw change command: delta_yaw=-90.00deg
+10:56:19: [INFO] [C:\Users\Mark\Desktop\WARG\autonomy-bootcamp-2026-p2\modules\command\command_worker.py | command_worker | 89] Command status sent to queue: CHANGE YAW: -90.0
+10:56:19: [INFO] [C:\Users\Mark\Desktop\WARG\autonomy-bootcamp-2026-p2\modules\command\command_worker.py | command_worker | 81] Received telemetry data: {
+            time_since_boot: None,
+            x: 20,
+            y: 30,
+            z: 30,
+            x_velocity: 20,
+            y_velocity: 0,
+            z_velocity: 0,
+            roll: None,
+            pitch: None,
+            yaw: 0,
+            roll_speed: None,
+            pitch_speed: None,
+            yaw_speed: None
+        }
+10:56:19: [INFO] [C:\Users\Mark\Desktop\WARG\autonomy-bootcamp-2026-p2\modules\command\command.py | run | 125] Average velocity: (2.400, 2.400, 0.080) m/s
+10:56:19: [INFO] [C:\Users\Mark\Desktop\WARG\autonomy-bootcamp-2026-p2\modules\command\command.py | run | 191] Sent yaw change command: delta_yaw=-135.00deg
+10:56:19: [INFO] [C:\Users\Mark\Desktop\WARG\autonomy-bootcamp-2026-p2\modules\command\command_worker.py | command_worker | 89] Command status sent to queue: CHANGE YAW: -135.0
+10:56:20: [INFO] [C:\Users\Mark\Desktop\WARG\autonomy-bootcamp-2026-p2\modules\command\command_worker.py | command_worker | 81] Received telemetry data: {
+            time_since_boot: None,
+            x: 30,
+            y: 30,
+            z: 30,
+            x_velocity: 0,
+            y_velocity: -20,
+            z_velocity: 0,
+            roll: None,
+            pitch: None,
+            yaw: -1.5707963267948966,
+            roll_speed: None,
+            pitch_speed: None,
+            yaw_speed: None
+        }
+10:56:20: [INFO] [C:\Users\Mark\Desktop\WARG\autonomy-bootcamp-2026-p2\modules\command\command.py | run | 125] Average velocity: (2.308, 1.538, 0.077) m/s
+10:56:20: [INFO] [C:\Users\Mark\Desktop\WARG\autonomy-bootcamp-2026-p2\modules\command\command.py | run | 191] Sent yaw change command: delta_yaw=-63.43deg
+10:56:20: [INFO] [C:\Users\Mark\Desktop\WARG\autonomy-bootcamp-2026-p2\modules\command\command_worker.py | command_worker | 89] Command status sent to queue: CHANGE YAW: -63.43494882292201
+10:56:20: [INFO] [C:\Users\Mark\Desktop\WARG\autonomy-bootcamp-2026-p2\modules\command\command_worker.py | command_worker | 81] Received telemetry data: {
+            time_since_boot: None,
+            x: 30,
+            y: 20,
+            z: 30,
+            x_velocity: 0,
+            y_velocity: -20,
+            z_velocity: 0,
+            roll: None,
+            pitch: None,
+            yaw: -1.5707963267948966,
+            roll_speed: None,
+            pitch_speed: None,
+            yaw_speed: None
+        }
+10:56:20: [INFO] [C:\Users\Mark\Desktop\WARG\autonomy-bootcamp-2026-p2\modules\command\command.py | run | 125] Average velocity: (2.222, 0.741, 0.074) m/s
+10:56:20: [INFO] [C:\Users\Mark\Desktop\WARG\autonomy-bootcamp-2026-p2\modules\command\command.py | run | 191] Sent yaw change command: delta_yaw=-90.00deg
+10:56:20: [INFO] [C:\Users\Mark\Desktop\WARG\autonomy-bootcamp-2026-p2\modules\command\command_worker.py | command_worker | 89] Command status sent to queue: CHANGE YAW: -90.0
+10:56:21: [INFO] [C:\Users\Mark\Desktop\WARG\autonomy-bootcamp-2026-p2\modules\command\command_worker.py | command_worker | 81] Received telemetry data: {
+            time_since_boot: None,
+            x: 30,
+            y: 10,
+            z: 30,
+            x_velocity: 0,
+            y_velocity: -20,
+            z_velocity: 0,
+            roll: None,
+            pitch: None,
+            yaw: -1.5707963267948966,
+            roll_speed: None,
+            pitch_speed: None,
+            yaw_speed: None
+        }
+10:56:21: [INFO] [C:\Users\Mark\Desktop\WARG\autonomy-bootcamp-2026-p2\modules\command\command.py | run | 125] Average velocity: (2.143, 0.000, 0.071) m/s
+10:56:21: [INFO] [C:\Users\Mark\Desktop\WARG\autonomy-bootcamp-2026-p2\modules\command\command.py | run | 191] Sent yaw change command: delta_yaw=-116.57deg
+10:56:21: [INFO] [C:\Users\Mark\Desktop\WARG\autonomy-bootcamp-2026-p2\modules\command\command_worker.py | command_worker | 89] Command status sent to queue: CHANGE YAW: -116.56505117707799
+10:56:21: [INFO] [C:\Users\Mark\Desktop\WARG\autonomy-bootcamp-2026-p2\modules\command\command_worker.py | command_worker | 81] Received telemetry data: {
+            time_since_boot: None,
+            x: 30,
+            y: 0,
+            z: 30,
+            x_velocity: -20,
+            y_velocity: 0,
+            z_velocity: 0,
+            roll: None,
+            pitch: None,
+            yaw: -3.141592653589793,
+            roll_speed: None,
+            pitch_speed: None,
+            yaw_speed: None
+        }
+10:56:21: [INFO] [C:\Users\Mark\Desktop\WARG\autonomy-bootcamp-2026-p2\modules\command\command.py | run | 125] Average velocity: (1.379, 0.000, 0.069) m/s
+10:56:21: [INFO] [C:\Users\Mark\Desktop\WARG\autonomy-bootcamp-2026-p2\modules\command\command.py | run | 191] Sent yaw change command: delta_yaw=-45.00deg
+10:56:21: [INFO] [C:\Users\Mark\Desktop\WARG\autonomy-bootcamp-2026-p2\modules\command\command_worker.py | command_worker | 89] Command status sent to queue: CHANGE YAW: -45.0
+10:56:22: [INFO] [C:\Users\Mark\Desktop\WARG\autonomy-bootcamp-2026-p2\modules\command\command_worker.py | command_worker | 81] Received telemetry data: {
+            time_since_boot: None,
+            x: 20,
+            y: 0,
+            z: 30,
+            x_velocity: -20,
+            y_velocity: 0,
+            z_velocity: 0,
+            roll: None,
+            pitch: None,
+            yaw: 3.141592653589793,
+            roll_speed: None,
+            pitch_speed: None,
+            yaw_speed: None
+        }
+10:56:22: [INFO] [C:\Users\Mark\Desktop\WARG\autonomy-bootcamp-2026-p2\modules\command\command.py | run | 125] Average velocity: (0.667, 0.000, 0.067) m/s
+10:56:22: [INFO] [C:\Users\Mark\Desktop\WARG\autonomy-bootcamp-2026-p2\modules\command\command.py | run | 191] Sent yaw change command: delta_yaw=-63.43deg
+10:56:22: [INFO] [C:\Users\Mark\Desktop\WARG\autonomy-bootcamp-2026-p2\modules\command\command_worker.py | command_worker | 89] Command status sent to queue: CHANGE YAW: -63.43494882292201
+10:56:22: [INFO] [C:\Users\Mark\Desktop\WARG\autonomy-bootcamp-2026-p2\modules\command\command_worker.py | command_worker | 81] Received telemetry data: {
+            time_since_boot: None,
+            x: 10,
+            y: 0,
+            z: 30,
+            x_velocity: -20,
+            y_velocity: 0,
+            z_velocity: 0,
+            roll: None,
+            pitch: None,
+            yaw: -3.141592653589793,
+            roll_speed: None,
+            pitch_speed: None,
+            yaw_speed: None
+        }
+10:56:22: [INFO] [C:\Users\Mark\Desktop\WARG\autonomy-bootcamp-2026-p2\modules\command\command.py | run | 125] Average velocity: (0.000, 0.000, 0.065) m/s
+10:56:22: [INFO] [C:\Users\Mark\Desktop\WARG\autonomy-bootcamp-2026-p2\modules\command\command.py | run | 191] Sent yaw change command: delta_yaw=-90.00deg
+10:56:22: [INFO] [C:\Users\Mark\Desktop\WARG\autonomy-bootcamp-2026-p2\modules\command\command_worker.py | command_worker | 89] Command status sent to queue: CHANGE YAW: -90.0
+10:56:24: [INFO] [C:\Users\Mark\Desktop\WARG\autonomy-bootcamp-2026-p2\modules\command\command_worker.py | command_worker | 78] Received sentinel value, exiting
+10:56:24: [INFO] [C:\Users\Mark\Desktop\WARG\autonomy-bootcamp-2026-p2\modules\command\command_worker.py | command_worker | 95] Command worker exiting

@@ -1,0 +1,5 @@
+23:43:51: [INFO] [C:\Users\Mark\Desktop\WARG\autonomy-bootcamp-2026-p2\tests\integration\mock_drones\heartbeat_sender_drone.py | main | 40] Logger initialized
+23:44:03: [INFO] [C:\Users\Mark\Desktop\WARG\autonomy-bootcamp-2026-p2\tests\integration\mock_drones\heartbeat_sender_drone.py | main | 71] Drone: Recieved heartbeat!
+23:44:04: [INFO] [C:\Users\Mark\Desktop\WARG\autonomy-bootcamp-2026-p2\tests\integration\mock_drones\heartbeat_sender_drone.py | main | 71] Drone: Recieved heartbeat!
+23:44:05: [INFO] [C:\Users\Mark\Desktop\WARG\autonomy-bootcamp-2026-p2\tests\integration\mock_drones\heartbeat_sender_drone.py | main | 71] Drone: Recieved heartbeat!
+23:44:06: [ERROR] [C:\Users\Mark\Desktop\WARG\autonomy-bootcamp-2026-p2\tests\integration\mock_drones\heartbeat_sender_drone.py | main | 61] Drone: Most likely sent heartbeats too fast: measured period was 0.9728507995605469s

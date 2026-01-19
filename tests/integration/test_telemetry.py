@@ -28,6 +28,7 @@ NUM_FAILS = 3
 #                            ↓ BOOTCAMPERS MODIFY BELOW THIS COMMENT ↓
 # =================================================================================================
 # Add your own constants here
+QUEUE_MAX_SIZE = 10
 
 # =================================================================================================
 #                            ↑ BOOTCAMPERS MODIFY ABOVE THIS COMMENT ↑
@@ -47,22 +48,43 @@ def start_drone() -> None:
 #                            ↓ BOOTCAMPERS MODIFY BELOW THIS COMMENT ↓
 # =================================================================================================
 def stop(
-    args,  # Add any necessary arguments
+    controller: worker_controller.WorkerController,
+    output_queue: queue_proxy_wrapper.QueueProxyWrapper,
 ) -> None:
     """
     Stop the workers.
+
+    Parameters:
+        controller: WorkerController to signal workers to stop.
+        output_queue: Queue to drain on shutdown.
     """
-    pass  # Add logic to stop your worker
+    controller.request_exit()
+    output_queue.fill_and_drain_queue()
 
 
 def read_queue(
-    args,  # Add any necessary arguments
+    output_queue: queue_proxy_wrapper.QueueProxyWrapper,
+    controller: worker_controller.WorkerController,
     main_logger: logger.Logger,
 ) -> None:
     """
     Read and print the output queue.
+
+    Parameters:
+        output_queue: Queue to read telemetry data from.
+        controller: WorkerController to check if exit was requested.
+        main_logger: Logger to log the output.
     """
-    pass  # Add logic to read from your worker's output queue and print it using the logger
+    while not controller.is_exit_requested():
+        try:
+            # Use a timeout to periodically check if exit was requested
+            telemetry_data = output_queue.queue.get(timeout=0.5)
+            if telemetry_data is None:
+                break
+            main_logger.info(f"Worker output: {telemetry_data}")
+        except Exception:  # pylint: disable=broad-except
+            # Queue.get with timeout raises Empty exception if no data
+            continue
 
 
 # =================================================================================================
@@ -111,19 +133,28 @@ def main() -> int:
     # =============================================================================================
     # Mock starting a worker, since cannot actually start a new process
     # Create a worker controller for your worker
+    controller = worker_controller.WorkerController()
 
     # Create a multiprocess manager for synchronized queues
+    mp_manager = mp.Manager()
 
     # Create your queues
+    output_queue = queue_proxy_wrapper.QueueProxyWrapper(mp_manager, QUEUE_MAX_SIZE)
 
     # Just set a timer to stop the worker after a while, since the worker infinite loops
-    threading.Timer(TELEMETRY_PERIOD * NUM_TRIALS * 2 + NUM_FAILS, stop, (args,)).start()
+    threading.Timer(
+        TELEMETRY_PERIOD * NUM_TRIALS * 2 + NUM_FAILS,
+        stop,
+        (controller, output_queue),
+    ).start()
 
     # Read the main queue (worker outputs)
-    threading.Thread(target=read_queue, args=(args, main_logger)).start()
+    threading.Thread(target=read_queue, args=(output_queue, controller, main_logger)).start()
 
     telemetry_worker.telemetry_worker(
-        # Put your own arguments here
+        connection,
+        output_queue,
+        controller,
     )
     # =============================================================================================
     #                          ↑ BOOTCAMPERS MODIFY ABOVE THIS COMMENT ↑

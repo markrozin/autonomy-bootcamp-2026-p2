@@ -65,9 +65,16 @@ class TelemetryData:  # pylint: disable=too-many-instance-attributes
 # =================================================================================================
 #                            ↓ BOOTCAMPERS MODIFY BELOW THIS COMMENT ↓
 # =================================================================================================
+# Timeout in seconds for receiving both messages
+TELEMETRY_TIMEOUT = 1.0
+
+
 class Telemetry:
     """
     Telemetry class to read position and attitude (orientation).
+
+    Receives ATTITUDE (30) and LOCAL_POSITION_NED (32) messages and combines them
+    into a single TelemetryData object.
     """
 
     __private_key = object()
@@ -76,37 +83,109 @@ class Telemetry:
     def create(
         cls,
         connection: mavutil.mavfile,
-        args,  # Put your own arguments here
         local_logger: logger.Logger,
-    ):
+    ) -> "tuple[True, Telemetry] | tuple[False, None]":
         """
         Falliable create (instantiation) method to create a Telemetry object.
+
+        Parameters:
+            connection: MAVLink connection to the drone.
+            local_logger: Logger instance for logging messages.
+
+        Returns:
+            A tuple containing success status and the Telemetry object (or None on failure).
         """
-        pass  # Create a Telemetry object
+        if connection is None:
+            return False, None
+
+        if local_logger is None:
+            return False, None
+
+        return True, Telemetry(cls.__private_key, connection, local_logger)
 
     def __init__(
         self,
         key: object,
         connection: mavutil.mavfile,
-        args,  # Put your own arguments here
         local_logger: logger.Logger,
     ) -> None:
         assert key is Telemetry.__private_key, "Use create() method"
 
-        # Do any intializiation here
+        self.__connection = connection
+        self.__logger = local_logger
 
-    def run(
-        self,
-        args,  # Put your own arguments here
-    ):
+    def run(self) -> "tuple[True, TelemetryData] | tuple[False, None]":
         """
         Receive LOCAL_POSITION_NED and ATTITUDE messages from the drone,
         combining them together to form a single TelemetryData object.
+
+        Returns:
+            A tuple (success, TelemetryData) or (False, None) on timeout.
         """
-        # Read MAVLink message LOCAL_POSITION_NED (32)
-        # Read MAVLink message ATTITUDE (30)
-        # Return the most recent of both, and use the most recent message's timestamp
-        pass
+        start_time = time.time()
+        remaining_timeout = TELEMETRY_TIMEOUT
+
+        attitude_data = None
+        position_data = None
+        attitude_time = 0
+        position_time = 0
+
+        # Keep trying to receive both messages within the timeout
+        while remaining_timeout > 0:
+            # Try to receive any telemetry message
+            msg = self.__connection.recv_match(
+                type=["ATTITUDE", "LOCAL_POSITION_NED"],
+                blocking=True,
+                timeout=remaining_timeout,
+            )
+
+            if msg is not None:
+                msg_type = msg.get_type()
+
+                if msg_type == "ATTITUDE":
+                    attitude_data = msg
+                    attitude_time = msg.time_boot_ms
+                    self.__logger.debug(f"Received ATTITUDE: yaw={msg.yaw}")
+
+                elif msg_type == "LOCAL_POSITION_NED":
+                    position_data = msg
+                    position_time = msg.time_boot_ms
+                    self.__logger.debug(f"Received LOCAL_POSITION_NED: x={msg.x}, y={msg.y}, z={msg.z}")
+
+            # Check if we have both messages
+            if attitude_data is not None and position_data is not None:
+                # Use the most recent timestamp
+                most_recent_time = max(attitude_time, position_time)
+
+                # Create TelemetryData with combined data
+                # Note: LOCAL_POSITION_NED uses NED coordinates, but we're treating it as x-y-z
+                # as per bootcamp instructions (x=right, y=forward, z=up)
+                telemetry_data = TelemetryData(
+                    time_since_boot=most_recent_time,
+                    x=position_data.x,
+                    y=position_data.y,
+                    z=position_data.z,
+                    x_velocity=position_data.vx,
+                    y_velocity=position_data.vy,
+                    z_velocity=position_data.vz,
+                    roll=attitude_data.roll,
+                    pitch=attitude_data.pitch,
+                    yaw=attitude_data.yaw,
+                    roll_speed=attitude_data.rollspeed,
+                    pitch_speed=attitude_data.pitchspeed,
+                    yaw_speed=attitude_data.yawspeed,
+                )
+
+                self.__logger.info(f"Telemetry data received: {telemetry_data}")
+                return True, telemetry_data
+
+            # Update remaining timeout
+            elapsed = time.time() - start_time
+            remaining_timeout = TELEMETRY_TIMEOUT - elapsed
+
+        # Timeout: did not receive both messages in time
+        self.__logger.error("Telemetry timeout: did not receive both ATTITUDE and LOCAL_POSITION_NED")
+        return False, None
 
 
 # =================================================================================================
