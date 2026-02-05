@@ -100,7 +100,7 @@ def main() -> int:
 
     # Just set a timer to stop the worker after a while, since the worker infinite loops
     # Account for initial heartbeat consumed by wait_heartbeat() and worker initialization time
-    threading.Timer(HEARTBEAT_PERIOD * NUM_TRIALS, stop, (controller,)).start()
+    threading.Timer(HEARTBEAT_PERIOD * (NUM_TRIALS + 1), stop, (controller,)).start()
 
     heartbeat_sender_worker.heartbeat_sender_worker(
         connection,
